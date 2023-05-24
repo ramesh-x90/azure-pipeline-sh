@@ -1,1 +1,1 @@
-docker build  -t AZP_agent_image:v1 . 
+docker build  -t AZP-agent-image:v1 . 

@@ -1,26 +1,26 @@
 version: "3"
 services:
   app1:
-    image: AZP_agent_image:v1
+    image: AZP-agent-image:v1
     env_file:
       - .env
 
   app2:
-    image: AZP_agent_image:v1
+    image: AZP-agent-image:v1
     env_file:
       - .env
 
   app3:
-    image: AZP_agent_image:v1
+    image: AZP-agent-image:v1
     env_file:
       - .env
 
   app4:
-    image: AZP_agent_image:v1
+    image: AZP-agent-image:v1
     env_file:
       - .env
 
   app5:
-    image: AZP_agent_image:v1
+    image: AZP-agent-image:v1
     env_file:
       - .env
