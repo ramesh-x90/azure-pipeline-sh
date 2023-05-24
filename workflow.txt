@@ -1,0 +1,4 @@
+ssh -i "D:/PROJECTS/azure/azure-pipeline-sh/id_rsa" ip172-18-0-35-chn4gs07hlh000f3mo2g@direct.labs.play-with-docker.com
+
+
+mkdir ms-agents
