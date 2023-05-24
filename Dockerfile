@@ -23,8 +23,6 @@ RUN apt-get install -y openjdk-17-jdk
 RUN apt-get install -y openjdk-17-jre
 
 RUN java --version
-RUN 
-
 
 WORKDIR /azp
 
