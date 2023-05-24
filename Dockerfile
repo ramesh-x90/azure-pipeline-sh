@@ -19,8 +19,8 @@ RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
 # Can be 'linux-x64', 'linux-arm64', 'linux-arm', 'rhel.6-x64'.
 ENV TARGETARCH=linux-x64
 
-RUN apt install -y openjdk-17-jdk
-RUN apt install -y openjdk-17-jre
+RUN apt-get install -y openjdk-17-jdk
+RUN apt-get install -y openjdk-17-jre
 
 RUN java --version
 RUN 
