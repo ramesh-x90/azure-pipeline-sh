@@ -7,7 +7,7 @@ services:
     image: rameshx90/agent1:v1
     environment:
       - AZP_URL=https://dev.azure.com/thilankadileepa0082
-      - AZP_TOKEN=mtimkcq5sgq7hvtrmmmemmaf3nmkg54jmi3fsg5ylk32igj3hpeq
+      - AZP_TOKEN=w3oftigxvpz6lmkixfcdjmcguv3zqfdhsyjnenwhflao5ltalatq
       - AZP_AGENT_NAME=Agent1
       - AZP_POOL=local
   app2:
@@ -17,6 +17,6 @@ services:
     image: rameshx90/agent2:v1
     environment:
       - AZP_URL=https://dev.azure.com/thilankadileepa0082
-      - AZP_TOKEN=mtimkcq5sgq7hvtrmmmemmaf3nmkg54jmi3fsg5ylk32igj3hpeq
+      - AZP_TOKEN=w3oftigxvpz6lmkixfcdjmcguv3zqfdhsyjnenwhflao5ltalatq
       - AZP_AGENT_NAME=Agent2
       - AZP_POOL=local
