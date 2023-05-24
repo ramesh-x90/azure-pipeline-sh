@@ -9,6 +9,7 @@ services:
       - AZP_URL=https://dev.azure.com/thilankadileepa0082
       - AZP_TOKEN=3sgvf7acgl7nopmgd6kaknddsbg5tuabgrv2v6sf5fjebjjpbooa
       - AZP_AGENT_NAME=Agent1
+      - AZP_POOL=local
   app2:
     build:
       context: .
@@ -18,3 +19,4 @@ services:
       - AZP_URL=https://dev.azure.com/thilankadileepa0082
       - AZP_TOKEN=3sgvf7acgl7nopmgd6kaknddsbg5tuabgrv2v6sf5fjebjjpbooa
       - AZP_AGENT_NAME=Agent2
+      - AZP_POOL=local
