@@ -1,25 +1,26 @@
 version: "3"
 services:
   app1:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: rameshx90/agent:v1
+    image: AZP_agent_image:v1
     env_file:
       - .env
+
   app2:
-    image: rameshx90/agent:v1
+    image: AZP_agent_image:v1
     env_file:
       - .env
+
   app3:
-    image: rameshx90/agent:v1
+    image: AZP_agent_image:v1
     env_file:
       - .env
+
   app4:
-    image: rameshx90/agent:v1
+    image: AZP_agent_image:v1
     env_file:
       - .env
+
   app5:
-    image: rameshx90/agent:v1
+    image: AZP_agent_image:v1
     env_file:
       - .env
