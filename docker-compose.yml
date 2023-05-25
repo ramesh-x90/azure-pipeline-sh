@@ -6,6 +6,8 @@ services:
       - .env
     environment:
       - AZP_AGENT_NAME=az_agent1
+    volumes:
+      - ./var/run/docker.sock:/var/run/docker.sock:rw
 
   app2:
     image: rameshx90/azp-agents:latest
@@ -13,6 +15,8 @@ services:
       - .env
     environment:
       - AZP_AGENT_NAME=az_agent2
+    volumes:
+      - ./var/run/docker.sock:/var/run/docker.sock:rw
 
   app3:
     image: rameshx90/azp-agents:latest
@@ -20,6 +24,8 @@ services:
       - .env
     environment:
       - AZP_AGENT_NAME=az_agent3
+    volumes:
+      - ./var/run/docker.sock:/var/run/docker.sock:rw
 
   app4:
     image: rameshx90/azp-agents:latest
@@ -27,6 +33,8 @@ services:
       - .env
     environment:
       - AZP_AGENT_NAME=az_agent4
+    volumes:
+      - ./var/run/docker.sock:/var/run/docker.sock:rw
 
   app5:
     image: rameshx90/azp-agents:latest
@@ -34,3 +42,5 @@ services:
       - .env
     environment:
       - AZP_AGENT_NAME=az_agent5
+    volumes:
+      - ./var/run/docker.sock:/var/run/docker.sock:rw
