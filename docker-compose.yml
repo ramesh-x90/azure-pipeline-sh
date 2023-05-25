@@ -9,6 +9,7 @@ services:
     privileged: true
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+    container_name: agent_1
 
   app2:
     image: rameshx90/azp-agents:latest
@@ -19,6 +20,7 @@ services:
     privileged: true
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+    container_name: agent_2
 
   # app3:
   #   image: rameshx90/azp-agents:latest
