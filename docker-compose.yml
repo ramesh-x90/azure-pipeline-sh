@@ -20,32 +20,32 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
 
-  app3:
-    image: rameshx90/azp-agents:latest
-    env_file:
-      - .env
-    environment:
-      - AZP_AGENT_NAME=az_agent3
-    privileged: true
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
+  # app3:
+  #   image: rameshx90/azp-agents:latest
+  #   env_file:
+  #     - .env
+  #   environment:
+  #     - AZP_AGENT_NAME=az_agent3
+  #   privileged: true
+  #   volumes:
+  #     - /var/run/docker.sock:/var/run/docker.sock
 
-  app4:
-    image: rameshx90/azp-agents:latest
-    env_file:
-      - .env
-    environment:
-      - AZP_AGENT_NAME=az_agent4
-    privileged: true
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
+  # app4:
+  #   image: rameshx90/azp-agents:latest
+  #   env_file:
+  #     - .env
+  #   environment:
+  #     - AZP_AGENT_NAME=az_agent4
+  #   privileged: true
+  #   volumes:
+  #     - /var/run/docker.sock:/var/run/docker.sock
 
-  app5:
-    image: rameshx90/azp-agents:latest
-    env_file:
-      - .env
-    environment:
-      - AZP_AGENT_NAME=az_agent5
-    privileged: true
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
+  # app5:
+  #   image: rameshx90/azp-agents:latest
+  #   env_file:
+  #     - .env
+  #   environment:
+  #     - AZP_AGENT_NAME=az_agent5
+  #   privileged: true
+  #   volumes:
+  #     - /var/run/docker.sock:/var/run/docker.sock
