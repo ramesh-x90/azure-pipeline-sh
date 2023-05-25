@@ -1,35 +1,35 @@
 version: "3"
 services:
   app1:
-    image: azp-agent-image:v1
+    image: rameshx90/azp-agents:latest
     env_file:
       - .env
     environment:
       - AZP_AGENT_NAME=az_agent1
 
   app2:
-    image: azp-agent-image:v1
+    image: rameshx90/azp-agents:latest
     env_file:
       - .env
     environment:
       - AZP_AGENT_NAME=az_agent2
 
   app3:
-    image: azp-agent-image:v1
+    image: rameshx90/azp-agents:latest
     env_file:
       - .env
     environment:
       - AZP_AGENT_NAME=az_agent3
 
   app4:
-    image: azp-agent-image:v1
+    image: rameshx90/azp-agents:latest
     env_file:
       - .env
     environment:
       - AZP_AGENT_NAME=az_agent4
 
   app5:
-    image: azp-agent-image:v1
+    image: rameshx90/azp-agents:latest
     env_file:
       - .env
     environment:
