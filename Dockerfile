@@ -32,7 +32,7 @@ ENV PATH="/opt/apache-maven-3.9.2/bin:$PATH"
 
 RUN mvn -v
 
-RUN apt-get install docker.io
+RUN apt-get install -y -qq docker.io
 
 WORKDIR /azp
 
