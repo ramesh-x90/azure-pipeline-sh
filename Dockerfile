@@ -12,7 +12,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommend
     jq \
     lsb-release \
     software-properties-common  \
-    maven
+    wget
 
 RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
 
@@ -22,7 +22,11 @@ ENV TARGETARCH=linux-x64
 RUN apt-get install -y openjdk-17-jdk
 RUN apt-get install -y openjdk-17-jre
 
-RUN java --version
+RUN wget https://dlcdn.apache.org/maven/maven-3/3.9.2/binaries/apache-maven-3.9.2-bin.tar.gz
+RUN tar -xvf apache-maven-3.9.2-bin.tar.gz
+RUN mv apache-maven-3.9.2 /opt/
+RUN M2_HOME='/opt/apache-maven-3.9.2' 
+RUN PATH="$M2_HOME/bin:$PATH"
 
 WORKDIR /azp
 
